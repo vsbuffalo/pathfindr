@@ -1,6 +1,11 @@
 
 #testToken <- "12_31_99"
 
+#is.Date: only works with 
+#"%Y-%m-%d" then "%Y/%m/%d" format
+#even if sub in _ or . or -,
+#if date is at end, won't work...
+#so just looped through various time/date options.
 verifyTimeClass <- function(token){
   
   library("lubridate")
