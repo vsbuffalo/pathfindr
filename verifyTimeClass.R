@@ -27,6 +27,6 @@ verifyTimeClass <- function(token){
   
   #not on of the various time formats we fed in.
   #so return NULL
-  return(NULL)
+  return(FALSE)
 
 }
