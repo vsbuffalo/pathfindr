@@ -6,6 +6,11 @@
 #even if sub in _ or . or -,
 #if date is at end, won't work...
 #so just looped through various time/date options.
+
+#times: this will return true:
+#verifyTimeClass("1:00:00 pm")
+#this won't:
+#verifyTimeClass("1:00 pm")
 verifyTimeClass <- function(token){
   
   library("lubridate")
